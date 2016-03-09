@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Mar 05 13:48:41 2016
+
+@author: shokimc
+"""
 
 def saveText(fileName, text):
     f = open(fileName, 'w')
