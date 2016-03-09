@@ -4,7 +4,7 @@ Created on Sat Mar 05 13:48:41 2016
 
 @author: shokimc
 """
-
+import os, sys
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 from os.path import dirname, isdir, isfile, join
@@ -16,7 +16,7 @@ class Programa(QWidget): #Antes tenia QDialog. Esto es para que aparezca el mini
         super(Programa, self).__init__()
         
         self.setWindowTitle(self.tr("Editor de archivos"))
-        self.setMinimumSize(500,300)
+        self.setMinimumSize(700,500)
         
        
         #Widget
@@ -36,14 +36,14 @@ class Programa(QWidget): #Antes tenia QDialog. Esto es para que aparezca el mini
         self.salvarComo=QPushButton("Salvar como")
 
         grilla=QGridLayout(self)
-        grilla.addWidget(self.carpeta, 0, 0) 
-        grilla.addWidget(self.line, 0, 1)
-        grilla.addWidget(self.boton, 0, 3)
-        grilla.addWidget(self.archivos, 1, 0)
-        grilla.addWidget(self.Editor, 2, 1)
-        grilla.addWidget(self.lista,2,0)
-        grilla.addWidget(self.salvar, 3, 0)
-        grilla.addWidget(self.salvarComo,3,1 )
+        grilla.addWidget(self.carpeta, 1, 1, 1, 1) 
+        grilla.addWidget(self.line, 1, 2, 1, 24)
+        grilla.addWidget(self.boton, 1, 26, 1, 4)
+        grilla.addWidget(self.archivos, 3, 1, 1, 4)
+        grilla.addWidget(self.Editor, 5, 7, 8, 20)
+        grilla.addWidget(self.lista,5, 1, 8, 6)
+        grilla.addWidget(self.salvar, 17, 1, 2, 3)
+        grilla.addWidget(self.salvarComo, 17, 4, 2, 5 )
 
 
 
@@ -97,17 +97,19 @@ class Programa(QWidget): #Antes tenia QDialog. Esto es para que aparezca el mini
         
         row = self.lista.currentRow()
         item = self.lista.item(row)
+
+        self_path = os.path.join(str(url), item.text())
+        
         
         print item.text()
 
-        f = open(item.text(), 'w')
+        f = open(self_path, 'w')
         filedata = self.Editor.toPlainText()
         f.write(filedata)
         f.close()
 
 
 if __name__=='__main__':
-    import os, sys
 
     app=QApplication([])
     w=Programa()
