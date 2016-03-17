@@ -1,0 +1,646 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/shokimc/ontologies/2016/2/untitled-ontology-10"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/shokimc/ontologies/2016/2/untitled-ontology-10">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Abuela"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Abuelo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Familia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hermana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hermano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hija"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hijo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hombre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Madre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mujer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nieta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nieto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Padre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sobrina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sobrino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tita"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tito"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esAbuelaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esAbueloDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esHermanaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esHermanoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esHijaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esHijoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esHombre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esMadreDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esMujer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esNietaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esNietoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esPadreDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esSobrinaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esSobrinoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esTitaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esTitoDe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alberto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alfonso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antonia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antonio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antonio_C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Araceli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clemente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Isabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MariJose"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Abuela"/>
+        <Class IRI="#Mujer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abuela"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esAbuelaDe"/>
+            <Class IRI="#Nieta"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abuela"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esAbuelaDe"/>
+            <Class IRI="#Nieto"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abuelo"/>
+        <Class IRI="#Hombre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abuelo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esAbueloDe"/>
+            <Class IRI="#Nieta"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abuelo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esAbueloDe"/>
+            <Class IRI="#Nieto"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hermana"/>
+        <Class IRI="#Mujer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hermana"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHermanaDe"/>
+            <Class IRI="#Hermana"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hermana"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHermanaDe"/>
+            <Class IRI="#Hermano"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hermano"/>
+        <Class IRI="#Hombre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hermano"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHermanoDe"/>
+            <Class IRI="#Hermana"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hermano"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHermanoDe"/>
+            <Class IRI="#Hermano"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hija"/>
+        <Class IRI="#Mujer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hija"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHijaDe"/>
+            <Class IRI="#Madre"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hija"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHijaDe"/>
+            <Class IRI="#Padre"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hijo"/>
+        <Class IRI="#Hombre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hijo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHijoDe"/>
+            <Class IRI="#Madre"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hijo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHijoDe"/>
+            <Class IRI="#Padre"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hombre"/>
+        <Class IRI="#Familia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Madre"/>
+        <Class IRI="#Mujer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Madre"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esMadreDe"/>
+            <Class IRI="#Hija"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Madre"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esMadreDe"/>
+            <Class IRI="#Hijo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mujer"/>
+        <Class IRI="#Familia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nieta"/>
+        <Class IRI="#Mujer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nieta"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esNietaDe"/>
+            <Class IRI="#Abuela"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nieta"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esNietaDe"/>
+            <Class IRI="#Abuelo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nieto"/>
+        <Class IRI="#Hombre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nieto"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esNietoDe"/>
+            <Class IRI="#Abuela"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nieto"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esNietoDe"/>
+            <Class IRI="#Abuelo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Padre"/>
+        <Class IRI="#Hombre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Padre"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esPadreDe"/>
+            <Class IRI="#Hija"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Padre"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esPadreDe"/>
+            <Class IRI="#Hijo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sobrina"/>
+        <Class IRI="#Mujer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sobrina"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esSobrinaDe"/>
+            <Class IRI="#Tita"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sobrina"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esSobrinaDe"/>
+            <Class IRI="#Tito"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sobrino"/>
+        <Class IRI="#Hombre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sobrino"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esSobrinoDe"/>
+            <Class IRI="#Tita"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sobrino"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esSobrinoDe"/>
+            <Class IRI="#Tito"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tita"/>
+        <Class IRI="#Mujer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tita"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esTitaDe"/>
+            <Class IRI="#Sobrina"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tita"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esTitaDe"/>
+            <Class IRI="#Sobrino"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tito"/>
+        <Class IRI="#Hombre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tito"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esTitoDe"/>
+            <Class IRI="#Sobrina"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tito"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esTitoDe"/>
+            <Class IRI="#Sobrino"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Hermano"/>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hijo"/>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nieto"/>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sobrino"/>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHermanoDe"/>
+            <Class IRI="#Hermana"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHijoDe"/>
+            <Class IRI="#Madre"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHijoDe"/>
+            <Class IRI="#Padre"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esNietoDe"/>
+            <Class IRI="#Abuela"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esNietoDe"/>
+            <Class IRI="#Abuelo"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esSobrinoDe"/>
+            <Class IRI="#Tita"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esSobrinoDe"/>
+            <Class IRI="#Tito"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tito"/>
+        <NamedIndividual IRI="#Alfonso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Abuela"/>
+        <NamedIndividual IRI="#Antonia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Madre"/>
+        <NamedIndividual IRI="#Antonia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esAbuelaDe"/>
+            <Class IRI="#Nieta"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Antonia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esAbuelaDe"/>
+            <Class IRI="#Nieto"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Antonia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hijo"/>
+        <NamedIndividual IRI="#Antonio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Padre"/>
+        <NamedIndividual IRI="#Antonio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Abuelo"/>
+        <NamedIndividual IRI="#Antonio_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Padre"/>
+        <NamedIndividual IRI="#Antonio_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esAbueloDe"/>
+            <Class IRI="#Nieta"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Antonio_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esAbueloDe"/>
+            <Class IRI="#Nieto"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Antonio_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hija"/>
+        <NamedIndividual IRI="#Araceli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Madre"/>
+        <NamedIndividual IRI="#Araceli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esHijaDe"/>
+            <Class IRI="#Abuelo"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Araceli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sobrino"/>
+        <NamedIndividual IRI="#Clemente"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tita"/>
+        <NamedIndividual IRI="#Isabel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hermana"/>
+        <NamedIndividual IRI="#Laura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hija"/>
+        <NamedIndividual IRI="#Laura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nieta"/>
+        <NamedIndividual IRI="#Laura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sobrina"/>
+        <NamedIndividual IRI="#Laura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sobrina"/>
+        <NamedIndividual IRI="#MariJose"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esAbuelaDe"/>
+        <ObjectProperty IRI="#esMujer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esAbueloDe"/>
+        <ObjectProperty IRI="#esHombre"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esHermanaDe"/>
+        <ObjectProperty IRI="#esMujer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esHermanoDe"/>
+        <ObjectProperty IRI="#esHombre"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esHijaDe"/>
+        <ObjectProperty IRI="#esMujer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esHijoDe"/>
+        <ObjectProperty IRI="#esHombre"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esMadreDe"/>
+        <ObjectProperty IRI="#esMujer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esNietaDe"/>
+        <ObjectProperty IRI="#esMujer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esNietoDe"/>
+        <ObjectProperty IRI="#esHombre"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esPadreDe"/>
+        <ObjectProperty IRI="#esHombre"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esSobrinaDe"/>
+        <ObjectProperty IRI="#esMujer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esSobrinoDe"/>
+        <ObjectProperty IRI="#esHombre"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esTitaDe"/>
+        <ObjectProperty IRI="#esMujer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esTitoDe"/>
+        <ObjectProperty IRI="#esHombre"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esHijaDe"/>
+        <ObjectProperty IRI="#esMadreDe"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esHijaDe"/>
+        <ObjectProperty IRI="#esPadreDe"/>
+    </InverseObjectProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
